@@ -19,7 +19,9 @@ int main(){
             res = n1 * n2;
             break;
         case '/':
-            res = n1 / n2;
+            if(n2 != 0)
+                res = n1 / n2;
+            else printf("Cannot divide by 0\n");
             break;
         default:
             printf("Invalid operation\n");
